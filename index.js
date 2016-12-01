@@ -2,5 +2,10 @@
 'use strict';
 
 module.exports = {
-  name: 'css-assets'
+  name: 'css-assets',
+  options: {
+    cssModules: {
+      // config
+    }
+  }
 };

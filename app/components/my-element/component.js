@@ -1,0 +1,1 @@
+export { default } from 'css-assets/components/my-element/component';
