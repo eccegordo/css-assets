@@ -1,10 +1,19 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+var postcssNested = require('postcss-nested');
 
 module.exports = function(defaults) {
   var app = new EmberAddon(defaults, {
     // Add options here
+    cssModules: {
+      plugins: {
+        before: [
+          postcssNested
+        ],
+        after: []
+      }
+    }
   });
 
   /*
